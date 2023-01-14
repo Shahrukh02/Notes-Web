@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Login/Signup - Notes</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="signup"  data-aos="flip-left">
+          <div class="signup_heading">
+            <h1 class="login">Login</h1>
+          </div>
+          <div class="input_fields">
+            <label for="loginUserEmail">
+              <div class="label">Email:</div>
+              <br />
+              <input
+                class="input_style"
+                type="email"
+                name=""
+                id="loginUserEmail"
+                required
+              />
+            </label>
+            <br />
+        </div>
+        <div class="input_fields">
+            <label for="loginUserPass">
+              <div class="label">Password:</div>
+              <br />
+              <input
+                class="input_style"
+                type="password"
+                name=""
+                id="loginUserPass"
+                required
+              />
+            </label>
+          </div>
+          <br />
+          <div class="submit_btn">
+            <input
+              class="submit_btn_click"
+              type="submit"
+              value="Login"
+              id="loginBtn"
+            />
+          </div>
+          <div class="link">
+            <a href="./index.html">Create an account click here</a>
+          </div>
+   
+      </div>
+    </div>
+
+
+    <script src="login.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jodit/3.24.2/jodit.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/jodit/3.24.2/jodit.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <title>Notes</title>
+  </head>
+
+  <body>
+    <div class="main_heding" data-aos="fade-down">
+      <div class="main_notes_heading">
+        <div class="heading">
+          <h1>Notes</h1>
+        </div>
+        <div class="logout_btn">
+          <button id="logoutBtn" class="logout_button">logout</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="profile_ui" data-aos="fade-up">
+        <div class="greet_and_btn">
+          <div class="greeting_heading">
+            <h1>Hi, <span id="greetig_name"></span></h1>
+          </div>
+          <div class="create_note_btn">
+            <button class="add_note_btn" id="noteCreateBtn">
+              + Create Note
+            </button>
+          </div>
+        </div>
+        <div class="line_div">
+          <div class="line"></div>
+        </div>
+        <div class="no_notes" id="noNotes">
+          <h2>No such Notes</h2>
+        </div>
+        <div class="main_note_div">
+          <div class="all_notes" id="allNotes"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Type Your Note</h2>
+        </div>
+        <div class="modal-body">
+          <textarea id="editor"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button class="textarea_btn" onclick="noteUpdate()">Update</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="profile.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

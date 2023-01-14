@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body {
+  margin: 0px;
+  padding: 0px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(85, 84, 147, 1) 0%,
+    rgba(111, 131, 203, 1) 35%,
+    rgba(171, 240, 254, 1) 100%
+  );
+  font-family: 'Josefin Sans', sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    
+}
+.signup{
+    background-color: #fff;
+    width: 50%;
+    height: 450px;
+    border-radius: 10px;
+    
+}
+.signup_heading{ 
+    font-size: 25px;
+    text-align: center;
+  ;
+    /* background-color: aqua; */
+}
+
+.input_fields{
+  display: flex;
+  justify-content: center;
+  /* background-color:aqua  */
+}
+.input_style{
+  padding: 5px;
+  height: 15px;
+  border: solid gray 1px;
+  border-radius: 2px;
+  margin-top: 15px;
+   width: 310px;
+}
+.label{
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+.submit_btn{
+
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.submit_btn_click{
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: #fff;
+  border-radius: 100px;
+  border: solid 1px #ffff;
+  background-color: #fff;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(85, 84, 147, 1) 0%,
+    rgba(111, 131, 203, 1) 35%,
+    rgba(171, 240, 254, 1) 100%
+  );
+  /* margin-top: 10px; */
+  height: 40px;
+  width: 50%;
+}
+.link{
+  margin-bottom: 20px;
+  text-align: center;
+}
+a{
+  word-spacing: 1px;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgba(85, 84, 147, 1) 0%;
+}
+a:active{
+  color: gray;
+}
+.login{
+  margin-bottom: 50px;
+}
+
+.profile_ui {
+  background-color: #fff;
+  width: 90%;
+  height: 80vh  ;
+  overflow: scroll;
+  
+  /* border-radius: 10px; */
+}
+
+.main_heding{
+  margin-top: 10px;
+  margin-bottom: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_notes_heading{
+  z-index: 100;
+  box-shadow: -1px 7px 6px black;
+  letter-spacing: 8px;
+  text-decoration: underline;
+  background-color: #fff;
+  width: 90%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px 0px 30px;
+}
+.logout_button{
+  background-color: transparent;
+  text-transform: capitalize;
+  width: 150px;
+  height: 38px;
+  font-weight: bolder;
+  border-radius: 2px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(85, 84, 147, 1) 0%,
+    rgba(111, 131, 203, 1) 35%,
+    rgba(171, 240, 254, 1) 100%
+  );
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.add_note_btn{
+  background-color: transparent;
+  text-transform: capitalize;
+  width: 150px;
+  height: 55px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(85, 84, 147, 1) 0%,
+    rgba(111, 131, 203, 1) 35%,
+    rgba(171, 240, 254, 1) 100%
+  );
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.greet_and_btn{
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.line_div{
+  display: flex;
+  justify-content: center;
+}
+.line{
+  width: 95%;
+  border: solid 1px black;
+}
+.no_notes{
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+.main_note_div{
+  display: flex;
+  justify-content: center;
+}
+.all_notes{
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  height: auto;
+}
+.notes{
+  margin-top: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.notes:hover{
+  cursor: pointer;
+  background-color: rgb(201, 196, 196);
+}
+.note_icon{
+  width: 50px;
+}
+.note_title{
+  margin-left: 30px;
+}
+.title_gray{
+  color: gray;
+}
+
+
+
+
+
+@media screen and (max-width : 720px) {
+  .signup{
+    width: 100%;
+  }
+  .profile_ui{
+    width: 100%;
+  }
+  .greeting_heading{
+    font-size: 14px;
+  }
+  .logout_button{
+    width: 100px;
+  }
+  .add_note_btn{
+    width: 120px;
+  }
+}
